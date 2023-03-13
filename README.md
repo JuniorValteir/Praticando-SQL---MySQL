@@ -14,8 +14,6 @@ INSERT [COLUMN] columsName dataType AFTER | BEFORE some_existing_column
 ```
 ###### CREATE SOME TABLE 
 ```
-
-
 CREATE TABLE Clients
 (
 	Id INT PRYMARY KEY AUTO_INCREMENT, // Will be created automatically 
@@ -26,7 +24,6 @@ CREATE TABLE Clients
 ```
 ###### INSERT COMAND
 ```
-
 INSERT INTO CLIENTES(NAME, EMAIL, DATEOFBIRTH)
 VALUES              ('CARLOS', 'CARLOS@GMAIL.COM, 10.02.2000')
 
@@ -34,8 +31,6 @@ VALUES              ('CARLOS', 'CARLOS@GMAIL.COM, 10.02.2000')
 ```
 ###### UPDATE VALUES ON TABLE
 ```	     
-
-
 UPDATE Clients 
 SET 	Id  = '[value-1]',
 	Name= '[value-2]',
@@ -53,9 +48,6 @@ CHANGE COLUMN old_column_name new_column_name Data Type
 ```
 ###### COMPOSITE PRIMARY KEY 
 ```
-
-
-
 CREATE TABLE SALES_ITENS
 (
         PRODUCTS_ID INT NOT NULL,
@@ -72,8 +64,6 @@ CREATE TABLE SALES_ITENS
 ###### SELECT PARIENTS DATA USING "INNER JOIN" COMAND 
 ```
 
-
-
 SELECT P.ID, P.DESCRIPTION, P.PRICE, P.QUANTITY, C.NOME, C.DESCRIPTION
 FROM PRODUCTS P INNER JOIN CATEGORY C
 ON C.ID = P.ID_CATEGORY 
@@ -81,8 +71,6 @@ ON C.ID = P.ID_CATEGORY
 ```
 ###### MATEMATIC OPERATION TO SHOW TOTAL DATA
 ```
-
-
 
 SELECT p.ID 'Code', p.DESCRIPTION_Products 'Description', (P.PRICE_Producs * P.QUANTITY_Products) 'Total', C.NAME_Category 'Name', C.DESCRIPTION_Category 'Description' 
 FROM products P INNER JOIN category C 
