@@ -40,7 +40,7 @@ WHERE ID= 0000990911000 // Don't forget to especified and filter by Id, or all d
 ```
 
 ALTER TABLE table_name   
-CHANGE COLUMN old_column_name new_column_name Data Type
+CHANGE COLUMN `old_column_name` `new_column_name` Data Type(length)
 
 ```
 ###### COMPOSITE PRIMARY KEY 
