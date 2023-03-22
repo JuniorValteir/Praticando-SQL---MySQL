@@ -4,7 +4,7 @@
 
 ###### MODIFY COLLUMN SEQUENCE IN SOME TABLE 
 ```
-ALTER TABLE changeColumnPositionDemo MODIFY StudentAddress varchar(200) AFTER StudentAge
+ALTER TABLE tasks MODIFY ProjectId int(11) AFTER id // Don't forget the length of the variable type
 
 INSERT A NEW COLLUMN IN SOME TABLE 
 ALTER TABLE Clients 
