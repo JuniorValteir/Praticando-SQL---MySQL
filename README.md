@@ -72,5 +72,7 @@ FROM products P INNER JOIN category C
 ON P.ID_Category = C.id;
 
 ```
+###### Defining the FK-FOREIGN KEY 
 ```
-
+ALTER TABLE `tasks` ADD CONSTRAINT `fk_projects` FOREIGN KEY (`idProject`) REFERENCES `projects`(`id`)
+```
